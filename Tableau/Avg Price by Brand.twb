@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='laptops_featured' inline='true' name='federated.007wyp81b3in8118e4l7e0zbt7z4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='laptops_featured' name='textscan.02xbjke1i77fxs1eue46h01426tk'>
+            <connection class='textscan' directory='C:/Users/HP/OneDrive/Desktop/Laptop Price Analysis/data/processed' filename='laptops_featured.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.02xbjke1i77fxs1eue46h01426tk' name='laptops_featured.csv' table='[laptops_featured#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Laptop_Name' ordinal='0' />
+            <column datatype='string' name='Status' ordinal='1' />
+            <column datatype='string' name='Brand' ordinal='2' />
+            <column datatype='string' name='Model' ordinal='3' />
+            <column datatype='string' name='CPU' ordinal='4' />
+            <column datatype='integer' name='RAM_GB' ordinal='5' />
+            <column datatype='integer' name='Storage_GB' ordinal='6' />
+            <column datatype='string' name='Storage_Type' ordinal='7' />
+            <column datatype='string' name='GPU' ordinal='8' />
+            <column datatype='real' name='Screen_Size' ordinal='9' />
+            <column datatype='string' name='Touch' ordinal='10' />
+            <column datatype='real' name='Price' ordinal='11' />
+            <column datatype='string' name='CPU_Brand' ordinal='12' />
+            <column datatype='string' name='GPU_Type' ordinal='13' />
+            <column datatype='string' name='Price_Category' ordinal='14' />
+            <column datatype='string' name='RAM_Category' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Laptop_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Laptop_Name]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>Laptop_Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Brand]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>Brand</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CPU</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CPU]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>CPU</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RAM_GB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RAM_GB]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>RAM_GB</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Storage_GB</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Storage_GB]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>Storage_GB</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Storage_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Storage_Type]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>Storage_Type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GPU</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GPU]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>GPU</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Screen_Size</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Screen_Size]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>Screen_Size</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Touch</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Touch]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>Touch</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CPU_Brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CPU_Brand]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>CPU_Brand</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GPU_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GPU_Type]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>GPU_Type</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Price_Category]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>Price_Category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RAM_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RAM_Category]</local-name>
+            <parent-name>[laptops_featured.csv]</parent-name>
+            <remote-alias>RAM_Category</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CPU Brand' datatype='string' name='[CPU_Brand]' role='dimension' type='nominal' />
+      <column caption='GPU Type' datatype='string' name='[GPU_Type]' role='dimension' type='nominal' />
+      <column caption='Laptop Name' datatype='string' name='[Laptop_Name]' role='dimension' type='nominal' />
+      <column caption='Price Category' datatype='string' name='[Price_Category]' role='dimension' type='nominal' />
+      <column caption='RAM Category' datatype='string' name='[RAM_Category]' role='dimension' type='nominal' />
+      <column caption='Ram Gb' datatype='integer' name='[RAM_GB]' role='measure' type='quantitative' />
+      <column caption='Screen Size' datatype='real' name='[Screen_Size]' role='measure' type='quantitative' />
+      <column caption='Storage GB' datatype='integer' name='[Storage_GB]' role='measure' type='quantitative' />
+      <column caption='Storage Type' datatype='string' name='[Storage_Type]' role='dimension' type='nominal' />
+      <column caption='laptops_featured.csv' datatype='table' name='[__tableau_internal_object_id__].[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/HP/AppData/Local/Temp/TableauTemp/#TableauTemp_17fdlvz0aepc9b1a8c7dk13sb126.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/12/2026 08:40:06 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Laptop_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Laptop_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Laptop_Name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2160</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>1</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Brand</remote-alias>
+              <ordinal>2</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Model</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Model]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Model</remote-alias>
+              <ordinal>3</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>110</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CPU</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CPU]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CPU</remote-alias>
+              <ordinal>4</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RAM_GB</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[RAM_GB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RAM_GB</remote-alias>
+              <ordinal>5</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Storage_GB</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Storage_GB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Storage_GB</remote-alias>
+              <ordinal>6</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Storage_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Storage_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Storage_Type</remote-alias>
+              <ordinal>7</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GPU</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GPU]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GPU</remote-alias>
+              <ordinal>8</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Screen_Size</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Screen_Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Screen_Size</remote-alias>
+              <ordinal>9</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Touch</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Touch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Touch</remote-alias>
+              <ordinal>10</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>11</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1113</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CPU_Brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CPU_Brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CPU_Brand</remote-alias>
+              <ordinal>12</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GPU_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GPU_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GPU_Type</remote-alias>
+              <ordinal>13</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Price_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price_Category</remote-alias>
+              <ordinal>14</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RAM_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RAM_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RAM_Category</remote-alias>
+              <ordinal>15</ordinal>
+              <family>laptops_featured.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='laptops_featured.csv' id='laptops_featured.csv_6B03CA952E2F4602A844241FF3136FD9'>
+            <properties context=''>
+              <relation connection='textscan.02xbjke1i77fxs1eue46h01426tk' name='laptops_featured.csv' table='[laptops_featured#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Laptop_Name' ordinal='0' />
+                  <column datatype='string' name='Status' ordinal='1' />
+                  <column datatype='string' name='Brand' ordinal='2' />
+                  <column datatype='string' name='Model' ordinal='3' />
+                  <column datatype='string' name='CPU' ordinal='4' />
+                  <column datatype='integer' name='RAM_GB' ordinal='5' />
+                  <column datatype='integer' name='Storage_GB' ordinal='6' />
+                  <column datatype='string' name='Storage_Type' ordinal='7' />
+                  <column datatype='string' name='GPU' ordinal='8' />
+                  <column datatype='real' name='Screen_Size' ordinal='9' />
+                  <column datatype='string' name='Touch' ordinal='10' />
+                  <column datatype='real' name='Price' ordinal='11' />
+                  <column datatype='string' name='CPU_Brand' ordinal='12' />
+                  <column datatype='string' name='GPU_Type' ordinal='13' />
+                  <column datatype='string' name='Price_Category' ordinal='14' />
+                  <column datatype='string' name='RAM_Category' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='laptops_featured' name='federated.007wyp81b3in8118e4l7e0zbt7z4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.007wyp81b3in8118e4l7e0zbt7z4'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.007wyp81b3in8118e4l7e0zbt7z4].[none:Brand:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.007wyp81b3in8118e4l7e0zbt7z4].[avg:Price:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.007wyp81b3in8118e4l7e0zbt7z4].[none:Brand:nk]</rows>
+        <cols>[federated.007wyp81b3in8118e4l7e0zbt7z4].[avg:Price:qk]</cols>
+      </table>
+      <simple-id uuid='{C84F2F33-8D1C-4B35-8802-373D0ED1137D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.007wyp81b3in8118e4l7e0zbt7z4].[none:Brand:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7E00F615-C3B6-469B-BD53-90550D6FE98F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
